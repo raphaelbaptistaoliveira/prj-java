@@ -16,7 +16,7 @@ public class UsuarioController {
 
     @Autowired
     UsuarioRepository uRepository;
-
+    //http://localhost:8080/api/usuario/add?nome=raphaelbaptista3&email=raphaelbaptista3@gmail.com
     @PostMapping("/add")
     public @ResponseBody String addUsuario(
         @RequestParam String nome,
