@@ -21,7 +21,11 @@ public class UsuarioController {
     public @ResponseBody String addUsuario(
         @RequestParam String nome,
         @RequestParam String email) {
-        
+        Usuario objU = new Usuario();
+        objU.setNome(nome);
+        objU.setEmail(email);
+        uRepository.save(objU);
+        return "Salvo";
       
     }
 
