@@ -51,7 +51,7 @@ public class ProdutoController {
     @DeleteMapping("/{id}")
     public @ResponseBody String apagar(@PathVariable Integer id){
         uRepository.deleteById(id);
-        return "Ok ao apagar!";
+        return "Produto apagado!";
     }
     
 }
