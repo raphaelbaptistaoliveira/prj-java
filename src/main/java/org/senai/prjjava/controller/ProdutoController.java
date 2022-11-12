@@ -24,9 +24,9 @@ public class ProdutoController {
     ProdutoRepository pRepository;
     //http://localhost:8080/api/produto/
     @PostMapping("/")
-    public @ResponseBody Integer addProduto(@RequestBody Produto objU) {
-        pRepository.save(objU);
-        return objU.getId();
+    public @ResponseBody Integer addProduto(@RequestBody Produto objP) {
+        pRepository.save(objP);
+        return objP.getId();
       
     }
 
@@ -42,9 +42,9 @@ public class ProdutoController {
     }
 
     @PutMapping("/")
-    public @ResponseBody Produto atualizar(@RequestBody Produto objU){
-        pRepository.save(objU);
-        return objU;
+    public @ResponseBody Produto atualizar(@RequestBody Produto objP){
+        pRepository.save(objP);
+        return objP;
 
     }
 
