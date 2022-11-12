@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class ProdutoController {
     @Autowired
     ProdutoRepository uRepository;
-    //http://localhost:8080/api/produto
+    //http://localhost:8080/api/produto/
     @PostMapping("/")
     public @ResponseBody Integer addProduto(@RequestBody Produto objU) {
         uRepository.save(objU);
