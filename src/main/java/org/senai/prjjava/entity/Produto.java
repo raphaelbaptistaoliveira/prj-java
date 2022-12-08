@@ -13,6 +13,7 @@ public class Produto {
     private String nome;
     private String descricao;
     private Float valor;
+    private String img;
     
     public Integer getId() {
         return id;
@@ -37,5 +38,11 @@ public class Produto {
     }
     public void setValor(Float valor) {
         this.valor = valor;
+    }
+    public String getimg() {
+        return img;
+    }
+    public void setimg(String img) {
+        this.img = img;
     }
 }
