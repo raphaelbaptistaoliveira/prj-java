@@ -39,10 +39,10 @@ public class Produto {
     public void setValor(Float valor) {
         this.valor = valor;
     }
-    public String getimg() {
+    public String getImg() {
         return img;
     }
-    public void setimg(String img) {
+    public void setImg(String img) {
         this.img = img;
     }
 }
