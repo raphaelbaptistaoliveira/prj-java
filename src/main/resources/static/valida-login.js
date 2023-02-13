@@ -17,11 +17,18 @@ button.addEventListener('click', function logar(){
     let login = document.getElementById('login').value
     let senha = document.getElementById('senha').value
     let validaLogin = false
+    let link
 
     for(let i in usuarios){
 
         if(login == usuarios[i].login && senha == usuarios[i].pass){
             validaLogin = true
+            if(i == 0){
+                link = "gerenciar/index.html";
+            }
+            if(i == 1){
+                link = "index.html";
+            }
             break
         }else{
             validaLogin = false
@@ -31,7 +38,7 @@ button.addEventListener('click', function logar(){
 
     if(validaLogin == true){
         alert('Sucesso')
-        location.href = "gerenciar/index.html";
+        location.href = link;
     }else{
         alert('Usuario ou senha incorretos')
     }
